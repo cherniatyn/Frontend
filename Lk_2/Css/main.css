@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+	background: rgba(15,124,45,0.5);
+	margin: 0;
+	font: oblique 14px/1.5 Times new Rowman, Arial, sans-serif;
+}
+
+.box {
+	/*height: 200px;*/
+	width: 80%;
+	min-width: 50%;
+	border: 1px solid aqua;
+	border-radius: 5px;
+	/*border-width: 5px 8px 0 12px;
+	border-style: dotted;
+	border-color: aqua;*/
+	/*background: rgba(200,200,200, 0.2);*/
+	padding: 30px;
+	margin: 5px 5px 5px 25px;
+	box-sizing: border-box;
+
+	/*background-image: url('../Images/image.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;*/
+	background: rgba(200,200,200, 0.2) url('../Images/image.jpg') 100% 100%/cover no-repeat;
+}
+
+.box.box1 {
+	max-width: 80%;
+	min-width: 50%;
+	border: 3px solid snow;
+	border-radius: 5px;
+}
+	
+
+.box1 {
+	max-width: 80%;
+	min-width: 50%;
+	border: 50px solid snow;
+	border-radius: 5px;
+}
+
+span ~ p {
+	text-align: right;
+}
+
+h1 {
+	color: red;
+}
+
+.data h1 {
+	color: aqua;
+	border-bottom: 2px dotted aqua;
+}
+
+div h1 {
+	color:  green;
+}
+
+/*.box p {
+	text-align: justify;
+	text-transform: capitalize;
+	text-decoration: unset;
+}*/
+
+
+.box p:first-child {
+	color:  green;
+}
+
+.link {
+	font-size: 40px;
+	color: blue;
+}
+
+
+
+.box:hover .link {
+	text-decoration: none;
+	/*color: green;*/
+}
+
+.link:hover {
+	font-size: 40px;
+	color: green;
+}

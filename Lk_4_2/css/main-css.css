@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	width: 954px;
+	font: 17px/1.2 'Lato', sans-serif;
+	color: #333333;
+	background: #f7f9fc;
+	text-align: left;
+}
+
+img {
+	border: 0;
+}
+
+.block {
+	display: table-cell;
+	width: 33.33%;
+	border: 1px solid #fff;
+	vertical-align: middle;
+}
+
+.page {
+	border: 10px solid #000;
+	/*overflow: hidden;*/
+}
+
+.page:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.box {
+	height: 200px;
+	width: 200px;
+	background: #ccc;
+	margin: 0 0 10px;
+	float: left;
+}
+.box-2 {
+	float: right;
+}

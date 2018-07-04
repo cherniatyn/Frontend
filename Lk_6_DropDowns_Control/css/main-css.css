@@ -1,0 +1,127 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto 0;
+	font: 700 17px/1.2 'Lato', sans-serif;
+	color: #333333;
+	background: #f7f9fc;
+	background-image: url('../images/background.jpg');
+	background-repeat: repeat;
+
+	text-align: left;
+}
+
+img {
+	border: 0;
+}
+.page {
+	margin: 0;
+	padding: 0;
+}
+
+.dropdowns {
+	position: relative;
+  	transform: translateX(150%);
+	margin: 0;
+	padding: 0;
+    list-style: none;
+	float: left;
+}
+
+.dropdowns li {
+	float: left;
+	margin: 10px;
+	padding: 0;
+	position: relative;
+}
+
+.dropdowns>li>a {
+	display: block;
+	padding: 10px 20px 15px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75); 
+}
+
+.dropdowns a:hover {
+	cursor: pointer;
+	color: #ffd200;
+}
+
+.dropdowns>li>a:after {
+	content: '';
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
+	border-color: #fff transparent transparent transparent;
+	top:100%;
+	left: 50%;
+	transform: translateX(-50%);	
+	transition: all 0.3s ease 0.3s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.dropdowns>li>a:hover:after {
+	visibility: visible;
+	opacity: 1;
+}
+
+.dropdowns>li>a:only-child:after {
+	content: '';
+	display: none;
+}
+
+.dropdowns>li>a:only-child:hover:after{
+	content: '';
+	display: none;
+}
+
+.dropdowns ul {
+	margin: 10px;
+	padding: 0;
+	background-color: #fff; 
+	list-style: none;
+	position: absolute;
+	left: 0;
+	display: none;
+	border-radius: 5px;
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75); 
+}
+
+
+.dropdowns ul li {
+	margin: 0;
+	padding: 0;
+    float: none;
+}
+
+.dropdowns ul a {
+	padding: 10px 20px 15px;
+	color: #000;
+	text-decoration: none;	
+    white-space: nowrap;
+    text-decoration: underline;
+
+    display: none;
+}
+
+.dropdowns li:hover ul { 
+    display: block; 
+}
+
+.dropdowns li:hover ul a { 
+	display: block;
+}
+
+.dropdowns li:hover ul li a:hover { 
+    color: #ffd200;
+}

@@ -1,0 +1,227 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	font: 17px/ 'Lato', sans-serif;
+	color: #333333;
+	background: #f7f9fc;
+}
+
+img {
+	border: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?i06t30');
+  src:  url('../fonts/icomoon.eot?i06t30#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?i06t30') format('truetype'),
+    url('../fonts/icomoon.woff?i06t30') format('woff'),
+    url('../fonts/icomoon.svg?i06t30#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}
+
+
+/*header*/
+header {
+	padding: 60px 0 0;
+	width: 953px;
+	margin: auto;
+	text-align: center;
+}
+.header-box {
+	margin: 0;
+	padding: 0 0 60px;	
+}
+
+.title {
+	font: italic bold 42px/1.2 'Lato', sans-serif;
+	margin: 0 0 25px;
+}
+
+.title-ul {
+	text-transform: uppercase;
+}
+
+.title-ul li {
+	display: inline-block;
+	list-style-type: none;
+	font-weight: bold;
+	padding: 0 17.5px 0;
+}
+
+.title-ul li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.title-ul li a:hover {
+	color: #c5c5c5;
+}
+/*header*/
+/*main*/
+main {
+	margin: 0;
+	padding: 0 0 120px;
+}
+
+.main-box {
+	margin: auto;
+	width: 953px;
+	height: 645px; 
+	box-shadow: 0 0 25px 0 rgba(0,0,0,0.1);
+	background: #ffffff;
+	padding: 70px 96px 120px;
+}
+
+.main-box h1 {
+	margin: 0;
+	font: 40px/1.5 'Lato', sans-serif;
+	font-weight: bold;
+	padding: 0 0 25px;
+}
+
+.main-box .top {
+	font-size: 25px;
+	font-style: italic;		
+}
+
+.separator {
+	color: #7f7f7f;
+	border-bottom: 2px solid #eeeeee; 
+	padding: 50px 0 0;
+	margin: 0 0 40px
+}
+.main-box p {
+	margin: 0 0 20px;
+	font: 17px/1.7 'Lato', sans-serif;
+}
+/*main*/
+/*footer*/
+footer {
+	background: #5c6bc0;
+	color: #909bd4;
+	padding: 0;
+}
+.footer-box {
+	margin:  auto;
+	width: 953px;
+	padding: 0;
+}
+
+.footer-box h1 {
+	text-align: center;
+	padding: 60px 0 40px;
+	margin: 0;
+	color: #4a569a;
+}
+
+.f_separator {
+	border-bottom: 2px solid #5765b5; 
+}
+
+.f_separator.t {
+	padding: 28px 0 0;
+	margin: 0 95px 40px;
+}
+
+.f_separator.b {
+	padding: 40px 0 0;
+	margin: 0 120px 40px;
+}
+
+.footer-ul {
+	text-transform: uppercase;
+	padding: 0;
+	text-align: center;
+}
+
+.footer-ul li {
+	display: inline-block;
+	list-style-type: none;
+	font-weight: bold;
+	padding: 0 20px 0;
+}
+
+.footer-ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.footer-ul li a:hover {
+	color: #9da6d9;
+}
+
+.footer-box p {
+	margin: 0 95px 0;
+	font: 13px/1.2 'Lato', sans-serif;
+	text-align: center;
+}
+
+.copyright {
+	display: inline-block;
+	padding: 0 170px 0;
+	font: 14px/1.2 'Lato', sans-serif;
+	text-align: center;
+}
+
+.autor {
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+}
+
+.social-ul {
+	padding: 25px 0 80px;
+	text-align: center;
+}
+
+.social-ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 12.5px 0;
+}
+
+.social-ul li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.social-ul li a:hover {
+	color: #9da6d9;
+}
+/*footer*/
