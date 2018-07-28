@@ -1,0 +1,160 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 14px/1.33 Lato, sans-serif;
+    color: #737373;
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    background: #ffffff;  
+}
+
+header {
+    width: 970px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    padding: 0 15px;
+    top: -10px;
+}
+
+.bold.logo-text {
+    padding: 0;
+    font: bold 18px/1.33 Lato, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #737373;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header-havigation {
+    list-style: none;
+    position: fixed;
+    top: -500px;
+    right: 600px;
+    bottom: 0;
+    background: transparent;
+    width: 200px;
+    height: 50px;
+    transition: top 0.3s ease;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header-havigation ul {
+    display: none;
+}
+
+.header-havigation li {
+    margin: 25px 0;
+    width: 100px;
+    height: 37px;
+    padding: 10px 10px;
+}
+
+.header-havigation li:hover {
+    background-color: #1bbc9b;
+    cursor: pointer;
+}
+
+.btn-nav {
+    position: relative;
+    top: 15px;
+    width: 24px;
+    height: 17px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.btn-nav span,
+.btn-nav:after,
+.btn-nav:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    right: 0;
+    background: #1bbc9b;
+    top: 50%;
+    margin-top:  -1px;
+    transition: all 0.3s ease;
+}
+
+.btn-nav:before {
+    margin-top: -7px;
+}
+.btn-nav:after {
+    margin-top: 5px
+}
+
+.active .btn-nav span {
+    opacity: 0;
+}
+
+.active .btn-nav:before,
+.active .btn-nav:after
+{
+    margin-top: -1px;
+    transform: rotate(45deg);
+}
+
+.active .btn-nav:after {
+    transform: rotate(-45deg);
+}
+
+.active .header-havigation {
+    top: 30px;
+}
+
+@media (max-width: 1200px) {
+    .active .btn-nav {
+        transform: translateX(-220px);
+    }
+}
+
+.sub-header {
+    background-image: url('../images/big-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 50px);
+    left: 0;
+    width: 100%;
+}
+
+.center-block {
+    width: 580px;
+    height: 2500px;
+
+    padding: 0 80px;
+}
